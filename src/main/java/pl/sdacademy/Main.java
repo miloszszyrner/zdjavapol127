@@ -9,7 +9,6 @@ public class Main {
   private static EntityManager em = HibernateUtil.getSessionFactory().createEntityManager();
   public static void main(String[] args) {
 
-
     HibernateUtil.shutdown();
   }
 }

@@ -35,6 +35,5 @@
         <mapping class="pl.sdacademy.BookRegistration"/>
         <mapping class="pl.sdacademy.HibernateUtil"/>
 
-
     </session-factory>
 </hibernate-configuration>
