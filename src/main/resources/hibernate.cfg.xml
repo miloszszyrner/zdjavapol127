@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/school_library?useSSL=false&amp;serverTimezone=CET</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">1402</property>
+        <property name="connection.pool_size">1</property>
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="current_session_context_class">thread</property>
+        <property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+
+        <property name="show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+
+<!--        <mapping class="org.example.Employee"/>-->
+<!--        <mapping class="org.example.Phone"/>-->
+<!--        <mapping class="org.example.Project"/>-->
+<!--        <mapping class="org.example.Task"/>-->
+<!--        <mapping class="org.example.HibernateUtil"/>-->
+
+<!--        <mapping class="org.example.hibernate.entity.Main"/>-->
+<!--        <mapping class="org.example.hibernate.entity.Phone127"/>-->
+<!--        <mapping class="org.example.hibernate.entity.PhoneBrand"/>-->
+<!--        <mapping class="org.example.hibernate.entity.Task127"/>-->
+<!--        <mapping class="org.example.hibernate.entity.TaskType"/>-->
+<!--        <mapping class="org.example.hibernate.entity.HibernateUtil"/>-->
+<!--        <mapping class="org.example.hibernate.entity.Employee127"/>-->
+<!--        <mapping class="org.example.hibernate.entity.Project127"/>-->
+
+        <mapping class="pl.sdacademy.BookRegistration"/>
+        <mapping class="pl.sdacademy.HibernateUtil"/>
+
+
+    </session-factory>
+</hibernate-configuration>
